@@ -1,0 +1,43 @@
+export interface BusRoute {
+  id: string;
+  route: string;
+  buses: number;
+  passengers: number;
+  demand: "Low" | "Medium" | "High";
+  efficiency: number;
+}
+
+export const busRoutes: BusRoute[] = [
+  {
+    id: "R001",
+    route: "Kakinada → Rajahmundry",
+    buses: 12,
+    passengers: 840,
+    demand: "High",
+    efficiency: 91,
+  },
+  {
+    id: "R002",
+    route: "Kakinada → Samalkota",
+    buses: 8,
+    passengers: 420,
+    demand: "Medium",
+    efficiency: 84,
+  },
+  {
+    id: "R003",
+    route: "Rajahmundry → Amalapuram",
+    buses: 6,
+    passengers: 210,
+    demand: "Low",
+    efficiency: 72,
+  },
+  {
+    id: "R004",
+    route: "Kakinada → Amalapuram",
+    buses: 10,
+    passengers: 690,
+    demand: "High",
+    efficiency: 88,
+  },
+];
